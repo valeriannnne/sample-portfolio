@@ -78,7 +78,6 @@ const Work = () => {
             </div>
           </div>
         </motion.div>
-
       </div>
     </div>
     
