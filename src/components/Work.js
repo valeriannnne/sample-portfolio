@@ -20,12 +20,12 @@ const Work = () => {
           <div>
             <h2 className='h2 leading-tight text-accent'>My Latest <br/>Work</h2>
             <p className='max-w-xm mb-16'>
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            These are the works I made while learning under the program Computer Science and practicing Web Development.
             </p>
             <button className='btn btn-sm'>View all projects</button>
           </div>
           {/* work1 */}
-          <div className='group relative overflow-hidden border-2 border-white/50 rounded-xl'>
+          <div className='lg:mt-8 group relative overflow-hidden border-2 border-white/50 rounded-xl'>
             {/* overlays */}
             <div className='group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300'></div>
             {/* img */}

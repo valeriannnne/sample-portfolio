@@ -36,7 +36,7 @@ const About = () => {
               Front-End Developer 
             </h3>
             <p className='mb-6'>
-            I am a third year student from Polytechnic University of the Philippines Manila. I am currently enrolled in Bachelor of Science in Computer Science. I have basic knowledge in Web Development. As a diligent and hardworking student, I believe that I can achieve the tasks that will be assigned to me.
+            I am a graduating Computer Science student from Polytechnic University of the Philippines Manila. I have basic knowledge in Web Development. As a diligent and hardworking student, I believe that I can achieve the tasks that will be assigned to me.
             <br></br><br></br>
             I am aware of the basics needed for Web Development such as using HTML, CSS, PHP, JavaScript, SQL, and other frameworks like ReactJS, NextJS, Bootstrap CSS, and Tailwind CSS. I also have background in using Android Studio, Figma, and  UIzard. 
 
