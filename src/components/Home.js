@@ -28,7 +28,8 @@ const Home = () => {
             <span className='mr-4 text-white'>An aspiring </span>
             <TypeAnimation sequence={
               ['Web Developer', 2000,
-              'UI/UX Designer', 2000,]}
+              'UI/UX Designer', 2000,
+              'QA Engineer', 2000,]}
               speed={50}
               className='text-accent'
               wrapper='span'
@@ -41,7 +42,7 @@ const Home = () => {
           whileInView={'show'}
           viewport={{once:false, amount:0.7}}
           className='mb-8 max-w-lg mx-auto lg:mx-0'>
-            I am a Third Year student from Polytechnic University of the Philippines. I am currently taking up Bachelor of Science in Computer Science.
+            I am a graduating student from Polytechnic University of the Philippines. I am currently taking up Bachelor of Science in Computer Science.
           </motion.p>
           <motion.div 
           variants={fadeIn('up',0.6)}
@@ -59,9 +60,9 @@ const Home = () => {
           whileInView={'show'}
           viewport={{once:false, amount:0.7}}
           className='flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0'>
-            <a href='#'><FaFacebook/></a>
-            <a href='#'><FaGithub/></a>
-            <a href='#'><FaLinkedin/></a>
+            <a href='https://www.facebook.com/valeriannnne' target='_blank'><FaFacebook/></a>
+            <a href='https://github.com/valeriannnne'><FaGithub/></a>
+            <a href='https://www.linkedin.com/in/lvls/'><FaLinkedin/></a>
           </motion.div>
         </div>
       

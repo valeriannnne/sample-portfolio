@@ -7,17 +7,17 @@ import {fadeIn} from '../variants';
 const services = [
   {
     name:"UI/UX Designer",
-    description:"tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
+    description:"Used UIzard for creating wireframes and Figma for mockups while working as an intern at Wear Forward.",
     link: 'Learn More'
   },
   {
     name:"Front-End Developer",
-    description:"tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
+    description:"Used React JS, NextJS, Bootstrap, and Tailwind in building websites. Has experienced in basic database management using MySQL, Strapi, XAMPP, and Firebase",
     link: 'Learn More'
   },
   {
-    name:"Software Developer",
-    description:"tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
+    name:"QA Engineer",
+    description:"Reported bugs and documented issues through Jira. Has experience in beta testing, integration testing, and regression testing",
     link: 'Learn More'
   },
 ]
@@ -35,7 +35,7 @@ const Services = () => {
         className='flex-1 lg:bg-services lg:bg-bottom bg-no-repeat mix-blend-lighten mb-12 lg:mb-0'>
           <h2 className='h2 text-accent mb-6'>What I Do</h2>
           <h3 className='h3 mb-16 max-w-[455px]'>
-            tempor incididunt ut labore et dolore magna aliqua.
+            I had two internships that strengthened my abilities and knowledge in coding, designing, and testing websites.
           </h3>
           <button className='btn btn-sm'>See my Work</button>
         </motion.div>
