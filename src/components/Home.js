@@ -4,6 +4,8 @@ import {FaGithub, FaLinkedin, FaFacebook} from 'react-icons/fa';
 import {TypeAnimation} from 'react-type-animation';
 import {motion} from 'framer-motion';
 import {fadeIn} from '../variants';
+// import links
+import {Link} from 'react-scroll';
 
 const Home = () => {
   return <section className='min-h-[85vh] lg:min-h-[78vh] flex items-center' id='home'>
@@ -50,8 +52,8 @@ const Home = () => {
           whileInView={'show'}
           viewport={{once:false, amount:0.7}}
           className='flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0'>
-            <button className='btn btn-lg'>Contact Me</button>
-            <a href="#" className='text-gradient btn-link'>My Portfolio</a>
+            <Link  to="contact" smooth={true} spy={true} ><button className='btn btn-lg'>Contact Me</button></Link> 
+            <a href='/view-projects' className='text-gradient btn-link'>My Portfolio</a>
           </motion.div>
           {/* Socials */}
           <motion.div 
