@@ -4,20 +4,20 @@ import {motion} from 'framer-motion'
 import {fadeIn} from '../variants';
 
 //services
-const services = [
+const services = [  
+  {
+    name:"QA Engineer",
+    description:"Reported bugs and documented issues through Jira. Has experience in beta testing, integration testing, and regression testing",
+    link: 'Learn More'
+  },
   {
     name:"UI/UX Designer",
     description:"Used UIzard for creating wireframes and Figma for mockups while working as an intern at Wear Forward.",
     link: 'Learn More'
   },
   {
-    name:"Front-End Developer",
+    name:"Full-Stack Developer",
     description:"Used React JS, NextJS, Bootstrap, and Tailwind in building websites. Has experienced in basic database management using MySQL, Strapi, XAMPP, and Firebase",
-    link: 'Learn More'
-  },
-  {
-    name:"QA Engineer",
-    description:"Reported bugs and documented issues through Jira. Has experience in beta testing, integration testing, and regression testing",
     link: 'Learn More'
   },
 ]

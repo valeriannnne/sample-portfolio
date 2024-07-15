@@ -1,10 +1,12 @@
 import React from 'react';
+import { Link, Route, Routes } from 'react-router-dom';
+import Projects from '../Projects';
 import {motion} from 'framer-motion'
 import {fadeIn} from '../variants';
 //images
 import Image1 from '../assets/portfolio-img1.png'
 import Image2 from '../assets/portfolio-img2.png'
-import Image3 from '../assets/portfolio-img3.png'
+import Image3 from '../assets/portfolio-img3.png' 
 
 const Work = () => {
   return <section className='section' id='work'>
@@ -22,7 +24,11 @@ const Work = () => {
             <p className='max-w-xm mb-16'>
             These are the works I made while learning under the program Computer Science and practicing Web Development.
             </p>
-            <button className='btn btn-sm'>View all projects</button>
+            <Link to="/view-projects"><button className='btn btn-sm'>View all projects</button></Link>
+            <Routes>
+                <Route path="/view-projects" element={<Projects />} />
+            </Routes>
+            
           </div>
           {/* work1 */}
           <div className='lg:mt-8 group relative overflow-hidden border-2 border-white/50 rounded-xl'>
@@ -31,15 +37,18 @@ const Work = () => {
             {/* img */}
             <img src={Image1} alt="" className='group-hover:scale-125 transition-all duration-500 z-50'/>
             {/* subtitle */}
-            <div className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50'>
-              <span className='text-accent font-bold'>UX/UI Design</span>
+            <div className='absolute -bottom-full left-12 min-[959px]::group-hover:bottom-40 group-hover:bottom-36 transition-all duration-500 z-50'>
+              <span className='text-accent font-bold'>Front-end web development</span>
             </div>
             {/* title */}
-            <div className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50'>
-              <span className='text-3xl'>Project Title</span>
+            <div className='absolute -bottom-full left-12 group-hover:bottom-28 transition-all duration-700 z-50'>
+              <span className='text-3xl'>(2022) Survey Form</span>
             </div>
-
+            <div className='absolute -bottom-full left-12 min-[959px]:group-hover:bottom-10 min-[768px]:group-hover:bottom-20 group-hover:bottom-5 transition-all duration-700 z-50 pr-4'>
+              <span className='text-xl'>First web project I did in completing freecodecamp course. HTML and CSS</span>
+            </div>
           </div>
+
         </motion.div>
         <motion.div 
           variants={fadeIn('left', 0.3)}
@@ -54,12 +63,15 @@ const Work = () => {
             {/* img */}
             <img src={Image2} alt="" className='group-hover:scale-125 transition-all duration-500 z-50'/>
             {/* subtitle */}
-            <div className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50'>
-              <span className='text-accent font-bold'>UX/UI Design</span>
+            <div className='absolute -bottom-full left-12 min-[959px]::group-hover:bottom-40 group-hover:bottom-36 transition-all duration-500 z-50'>
+              <span className='text-accent font-bold'>Front-end web development</span>
             </div>
             {/* title */}
-            <div className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50'>
-              <span className='text-3xl'>Project Title</span>
+            <div className='absolute -bottom-full left-12 group-hover:bottom-28 transition-all duration-700 z-50'>
+              <span className='text-3xl line-clamp-1'>(2022) Product Landing Page</span>
+            </div>
+            <div className='absolute -bottom-full left-12 min-[959px]:group-hover:bottom-10 min-[768px]:group-hover:bottom-20 group-hover:bottom-5 transition-all duration-700 z-50 pr-4'>
+              <span className='text-xl line-clamp-3'>Second responsive web project I did in freecodecamp course. HTML and CSS</span>
             </div>
           </div>
           {/* work3 */}
@@ -69,12 +81,15 @@ const Work = () => {
             {/* img */}
             <img src={Image3} alt="" className='group-hover:scale-125 transition-all duration-500 z-50'/>
             {/* subtitle */}
-            <div className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50'>
-              <span className='text-accent font-bold'>UX/UI Design</span>
+            <div className='absolute -bottom-full left-12 min-[959px]::group-hover:bottom-40 group-hover:bottom-36 transition-all duration-500 z-50'>
+              <span className='text-accent font-bold'>Front-end web development</span>
             </div>
             {/* title */}
-            <div className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50'>
-              <span className='text-3xl'>Project Title</span>
+            <div className='absolute -bottom-full left-12 group-hover:bottom-28 transition-all duration-700 z-50'>
+              <span className='text-3xl line-clamp-1'>(2022) Personal Portfolio</span>
+            </div>
+            <div className='absolute -bottom-full left-12 min-[959px]:group-hover:bottom-10 min-[768px]:group-hover:bottom-20 group-hover:bottom-5 transition-all duration-700 z-50 pr-4'>
+              <span className='text-xl line-clamp-3'>Final web project I did in freecodecamp course. HTML and CSS</span>
             </div>
           </div>
         </motion.div>

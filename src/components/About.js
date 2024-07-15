@@ -3,6 +3,8 @@ import CountUp from 'react-countup'
 import {useInView} from 'react-intersection-observer';
 import {motion} from 'framer-motion';
 import {fadeIn} from '../variants';
+// import links
+import {Link} from 'react-scroll';
 
 const About = () => {
   const [ref, inView] = useInView({
@@ -46,7 +48,7 @@ const About = () => {
             <div>
               <div className='text-[40px] font-tertiary text-gradient mb-2'>
                 {inView ? <CountUp start={0} end={13} duration={3}/> : null} {/*  not showing*/}
-                <CountUp start={0} end={22} duration={3}/>
+                <CountUp start={0} end={23} duration={3}/>
               </div>
               <div className='font-primary text-sm tracking-[2px]'>
                 Years <br/> Old
@@ -72,8 +74,8 @@ const About = () => {
             </div>
           </div>
           <div className='flex gap-x-8 items-center'>
-            <button className='btn btn-lg'>Contact Me</button>
-            <a href='#' className='text-gradient btn-link'>My Portfolio</a>
+            <Link  to="contact" smooth={true} spy={true} ><button className='btn btn-lg'>Contact Me</button></Link> 
+            <a href='/view-projects' className='text-gradient btn-link'>My Portfolio</a>
           </div>   
         </motion.div>
 
