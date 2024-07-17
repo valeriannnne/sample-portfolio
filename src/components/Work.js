@@ -50,6 +50,7 @@ const Work = () => {
           </div>
 
         </motion.div>
+        
         <motion.div 
           variants={fadeIn('left', 0.3)}
           initial='hidden'
@@ -93,6 +94,7 @@ const Work = () => {
             </div>
           </div>
         </motion.div>
+
       </div>
     </div>
     

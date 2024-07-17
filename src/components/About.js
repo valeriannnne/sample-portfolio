@@ -35,12 +35,12 @@ const About = () => {
           <div className='flex-1'>
             <h2 className='h2 text-accent'>About Me</h2>
             <h3 className='h3 mb-4'>
-              Front-End Developer 
+              Software QA Tester
             </h3>
             <p className='mb-6'>
             I am a graduating Computer Science student from Polytechnic University of the Philippines Manila. I have basic knowledge in Web Development. As a diligent and hardworking student, I believe that I can achieve the tasks that will be assigned to me.
             <br></br><br></br>
-            I am aware of the basics needed for Web Development such as using HTML, CSS, PHP, JavaScript, SQL, and other frameworks like ReactJS, NextJS, Bootstrap CSS, and Tailwind CSS. I also have background in using Android Studio, Figma, and  UIzard. 
+            I have experience in manual testing and am currently practicing my exploratory testing skills on uTest. During my last internship, I created test cases, bug reports, and conducted various types of manual testing.
 
             </p>
           </div>       
