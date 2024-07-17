@@ -76,11 +76,11 @@ export default function Projects() {
               {details.map((detail, index) => {
                 const { imgsrc, area, projtitle, description } = detail;
                 return (
-                  <div key={index} className='group relative overflow-hidden border-2 border-white/50 rounded-xl h-80'>
+                  <div key={index} className='group relative overflow-hidden border-2 border-white/50 rounded-xl min-[1200px]:h-80'>
                     {/* overlays */}
                     <div className='group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300'></div>
                     {/* img */}
-                    <img src={imgsrc} alt="" className='w-full h-full object-cover group-hover:scale-125 transition-all duration-500 z-50' />
+                    <img src={imgsrc} alt="" className='group-hover:scale-125 transition-all duration-500 z-50' />
                     {/* subtitle */}
                     <div className='absolute -bottom-full left-12 min-[959px]:group-hover:bottom-40 group-hover:bottom-36 transition-all duration-500 z-50'>
                       <span className='text-accent font-bold'>{area}</span>
