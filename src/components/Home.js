@@ -29,9 +29,11 @@ const Home = () => {
           className='mb-6 text-[36px] lg:text-[60px] font-secondary font-semibold uppercase leading-[1]'>
             <span className='mr-4 text-white'>An aspiring </span>
             <TypeAnimation sequence={
-              ['Web Developer', 2000,
+              [
+              'Software QA Tester', 2000,
+              'Web Developer', 2000,
               'UI/UX Designer', 2000,
-              'QA Engineer', 2000,]}
+              ]}
               speed={50}
               className='text-accent'
               wrapper='span'
@@ -63,8 +65,8 @@ const Home = () => {
           viewport={{once:false, amount:0.7}}
           className='flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0'>
             <a href='https://www.facebook.com/valeriannnne' target='_blank'><FaFacebook/></a>
-            <a href='https://github.com/valeriannnne'><FaGithub/></a>
-            <a href='https://www.linkedin.com/in/lvls/'><FaLinkedin/></a>
+            <a href='https://github.com/valeriannnne' target='_blank'><FaGithub/></a>
+            <a href='https://www.linkedin.com/in/lvls/' target='_blank'><FaLinkedin/></a>
           </motion.div>
         </div>
       

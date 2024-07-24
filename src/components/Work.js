@@ -3,10 +3,6 @@ import { Link, Route, Routes } from 'react-router-dom';
 import Projects from '../Projects';
 import {motion} from 'framer-motion'
 import {fadeIn} from '../variants';
-//images
-import Image1 from '../assets/portfolio-img1.png'
-import Image2 from '../assets/portfolio-img2.png'
-import Image3 from '../assets/portfolio-img3.png' 
 
 const Work = () => {
   return <section className='section' id='work'>
@@ -20,9 +16,9 @@ const Work = () => {
           className='flex flex-1 flex-col gap-y-12 mb-10 lg:mb-0'>
           {/* text */}
           <div>
-            <h2 className='h2 leading-tight text-accent'>My Latest <br/>Work</h2>
-            <p className='max-w-xm mb-16'>
-            These are the works I made while learning under the program Computer Science and practicing Web Development.
+            <h2 className='h2 leading-tight text-accent'>My Featured<br/>Projects</h2>
+            <p className='max-w-xm mb-16 '>
+            These are the works I made while learning under the program Computer Science and practicing Software Development. 
             </p>
             <Link to="/view-projects"><button className='btn btn-sm'>View all projects</button></Link>
             <Routes>
@@ -35,20 +31,19 @@ const Work = () => {
             {/* overlays */}
             <div className='group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300'></div>
             {/* img */}
-            <img src={Image1} alt="" className='group-hover:scale-125 transition-all duration-500 z-50'/>
+            <img src='https://snipboard.io/zhc8E9.jpg' alt="" className='group-hover:scale-125 transition-all duration-500 z-50' />
             {/* subtitle */}
-            <div className='absolute -bottom-full left-12 min-[959px]::group-hover:bottom-40 group-hover:bottom-36 transition-all duration-500 z-50'>
-              <span className='text-accent font-bold'>Front-end web development</span>
+            <div className='absolute -bottom-full left-12 min-[959px]:group-hover:bottom-40 group-hover:bottom-36 transition-all duration-500 z-50'>
+              <span className='text-accent line-clamp-1 font-bold'>Algorithm Implementation and Front-end web development</span>
             </div>
             {/* title */}
             <div className='absolute -bottom-full left-12 group-hover:bottom-28 transition-all duration-700 z-50'>
-              <span className='text-3xl'>(2022) Survey Form</span>
+              <span className='text-3xl line-clamp-1 hover:underline'><a target='_blank' href='https://github.com/dprfran/baybayin-fe'>(2024) B/Y Baybayin Romanization Tool</a></span>
             </div>
-            <div className='absolute -bottom-full left-12 min-[959px]:group-hover:bottom-10 min-[768px]:group-hover:bottom-20 group-hover:bottom-5 transition-all duration-700 z-50 pr-4'>
-              <span className='text-xl'>First web project I did in completing freecodecamp course. HTML and CSS</span>
+            <div className='absolute -bottom-full left-12 min-[1200px]:group-hover:bottom-10 min-[960px]:group-hover:bottom-6 min-[768px]:group-hover:bottom-12 group-hover:bottom-5 transition-all duration-700 z-50 pr-4'>
+              <span className='text-xl line-clamp-3'>Group thesis software for romanizing Baybayin characters from images into English. Used YOLOv8, Tesseract, and Flask</span>
             </div>
           </div>
-
         </motion.div>
         
         <motion.div 
@@ -62,17 +57,17 @@ const Work = () => {
             {/* overlays */}
             <div className='group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300'></div>
             {/* img */}
-            <img src={Image2} alt="" className='group-hover:scale-125 transition-all duration-500 z-50'/>
+            <img src='https://snipboard.io/ojPSmD.jpg' alt="" className='group-hover:scale-125 transition-all duration-500 z-50' />
             {/* subtitle */}
-            <div className='absolute -bottom-full left-12 min-[959px]::group-hover:bottom-40 group-hover:bottom-36 transition-all duration-500 z-50'>
-              <span className='text-accent font-bold'>Front-end web development</span>
+            <div className='absolute -bottom-full left-12 min-[959px]:group-hover:bottom-40 group-hover:bottom-36 transition-all duration-500 z-50'>
+              <span className='text-accent line-clamp-1 font-bold'>UI/UX Design and Front-end web development</span>
             </div>
             {/* title */}
             <div className='absolute -bottom-full left-12 group-hover:bottom-28 transition-all duration-700 z-50'>
-              <span className='text-3xl line-clamp-1'>(2022) Product Landing Page</span>
+              <span className='text-3xl line-clamp-1 hover:underline'><a target='_blank' href='https://github.com/QueencessMay/sentiment-analyzer'>(2023) Sentiment Analyzer</a></span>
             </div>
-            <div className='absolute -bottom-full left-12 min-[959px]:group-hover:bottom-10 min-[768px]:group-hover:bottom-20 group-hover:bottom-5 transition-all duration-700 z-50 pr-4'>
-              <span className='text-xl line-clamp-3'>Second responsive web project I did in freecodecamp course. HTML and CSS</span>
+            <div className='absolute -bottom-full left-12 min-[1200px]:group-hover:bottom-10 min-[960px]:group-hover:bottom-6 min-[768px]:group-hover:bottom-12 group-hover:bottom-5 transition-all duration-700 z-50 pr-4'>
+              <span className='text-xl line-clamp-3'>Created a mockup & interface to identify positive & negative comments for a group finals. Used Django and Figma</span>
             </div>
           </div>
           {/* work3 */}
@@ -80,24 +75,25 @@ const Work = () => {
             {/* overlays */}
             <div className='group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300'></div>
             {/* img */}
-            <img src={Image3} alt="" className='group-hover:scale-125 transition-all duration-500 z-50'/>
+            <img src='https://snipboard.io/Tncal8.jpg' alt="" className='group-hover:scale-125 transition-all duration-500 z-50' />
             {/* subtitle */}
-            <div className='absolute -bottom-full left-12 min-[959px]::group-hover:bottom-40 group-hover:bottom-36 transition-all duration-500 z-50'>
-              <span className='text-accent font-bold'>Front-end web development</span>
+            <div className='absolute -bottom-full left-12 min-[959px]:group-hover:bottom-40 group-hover:bottom-36 transition-all duration-500 z-50'>
+              <span className='text-accent line-clamp-1 font-bold'>Mobile Application</span>
             </div>
             {/* title */}
             <div className='absolute -bottom-full left-12 group-hover:bottom-28 transition-all duration-700 z-50'>
-              <span className='text-3xl line-clamp-1'>(2022) Personal Portfolio</span>
+              <span className='text-3xl line-clamp-1 hover:underline'><a target='_blank' href='https://github.com/valeriannnne/Quattuor_Bilin_DSC'>(2022) Bilin</a></span>
             </div>
-            <div className='absolute -bottom-full left-12 min-[959px]:group-hover:bottom-10 min-[768px]:group-hover:bottom-20 group-hover:bottom-5 transition-all duration-700 z-50 pr-4'>
-              <span className='text-xl line-clamp-3'>Final web project I did in freecodecamp course. HTML and CSS</span>
+            <div className='absolute -bottom-full left-12 min-[1200px]:group-hover:bottom-10 min-[960px]:group-hover:bottom-6 min-[768px]:group-hover:bottom-12 group-hover:bottom-5 transition-all duration-700 z-50 pr-4'>
+              <span className='text-xl line-clamp-3'>
+                <span>Service app connecting Tagapaglingkod with Mamamayan for services. Used Java and Android Studio. </span>
+                <a target="_blank" href='https://www.youtube.com/watch?v=jRDQDq1WtQE' className='underline'>See Demo</a>
+              </span>
             </div>
           </div>
         </motion.div>
-
       </div>
-    </div>
-    
+    </div>    
   </section>;
 };
 
