@@ -40,6 +40,10 @@
   border-radius: 100%;
 }
 
+.overscroll-none {
+  overscroll-behavior: none;
+}
+
 @layer base {
   body {
     @apply font-secondary text-lg leading-8 text-white;

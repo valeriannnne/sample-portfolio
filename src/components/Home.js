@@ -4,6 +4,8 @@ import {FaGithub, FaLinkedin, FaFacebook} from 'react-icons/fa';
 import {TypeAnimation} from 'react-type-animation';
 import {motion} from 'framer-motion';
 import {fadeIn} from '../variants';
+// import links
+import {Link} from 'react-scroll';
 
 const Home = () => {
   return <section className='min-h-[85vh] lg:min-h-[78vh] flex items-center' id='home'>
@@ -27,8 +29,11 @@ const Home = () => {
           className='mb-6 text-[36px] lg:text-[60px] font-secondary font-semibold uppercase leading-[1]'>
             <span className='mr-4 text-white'>An aspiring </span>
             <TypeAnimation sequence={
-              ['Web Developer', 2000,
-              'UI/UX Designer', 2000,]}
+              [
+              'Software QA Tester', 2000,
+              'Web Developer', 2000,
+              'UI/UX Designer', 2000,
+              ]}
               speed={50}
               className='text-accent'
               wrapper='span'
@@ -41,7 +46,7 @@ const Home = () => {
           whileInView={'show'}
           viewport={{once:false, amount:0.7}}
           className='mb-8 max-w-lg mx-auto lg:mx-0'>
-            I am a Third Year student from Polytechnic University of the Philippines. I am currently taking up Bachelor of Science in Computer Science.
+            I am a graduating student from Polytechnic University of the Philippines. I am currently taking up Bachelor of Science in Computer Science.
           </motion.p>
           <motion.div 
           variants={fadeIn('up',0.6)}
@@ -49,8 +54,8 @@ const Home = () => {
           whileInView={'show'}
           viewport={{once:false, amount:0.7}}
           className='flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0'>
-            <button className='btn btn-lg'>Contact Me</button>
-            <a href="#" className='text-gradient btn-link'>My Portfolio</a>
+            <Link  to="contact" smooth={true} spy={true} ><button className='btn btn-lg'>Contact Me</button></Link> 
+            <a href='/view-projects' className='text-gradient btn-link'>My Portfolio</a>
           </motion.div>
           {/* Socials */}
           <motion.div 
@@ -59,9 +64,9 @@ const Home = () => {
           whileInView={'show'}
           viewport={{once:false, amount:0.7}}
           className='flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0'>
-            <a href='#'><FaFacebook/></a>
-            <a href='#'><FaGithub/></a>
-            <a href='#'><FaLinkedin/></a>
+            <a href='https://www.facebook.com/valeriannnne' target='_blank'><FaFacebook/></a>
+            <a href='https://github.com/valeriannnne' target='_blank'><FaGithub/></a>
+            <a href='https://www.linkedin.com/in/lvls/' target='_blank'><FaLinkedin/></a>
           </motion.div>
         </div>
       
