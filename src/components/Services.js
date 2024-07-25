@@ -36,7 +36,7 @@ const Services = () => {
           <h3 className='h3 mb-16 max-w-[455px]'>
             I had two internships that strengthened my abilities and knowledge in coding, designing, and testing websites.
           </h3>
-          <button className='btn btn-sm'><a href='/view-projects'>See my Work</a></button> 
+          <button className='btn btn-sm'><a href='#/view-projects'>See my Work</a></button> 
         </motion.div>
         {/* services */}
         <motion.div

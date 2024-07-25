@@ -20,9 +20,9 @@ const Work = () => {
             <p className='max-w-xm mb-16 '>
             These are the works I made while learning under the program Computer Science and practicing Software Development. 
             </p>
-            <Link to="/view-projects"><button className='btn btn-sm'>View all projects</button></Link>
+            <Link to="#/view-projects"><button className='btn btn-sm'>View all projects</button></Link>
             <Routes>
-                <Route path="/view-projects" element={<Projects />} />
+                <Route path="#/view-projects" element={<Projects />} />
             </Routes>
             
           </div>

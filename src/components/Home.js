@@ -55,7 +55,7 @@ const Home = () => {
           viewport={{once:false, amount:0.7}}
           className='flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0'>
             <Link  to="contact" smooth={true} spy={true} ><button className='btn btn-lg'>Contact Me</button></Link> 
-            <a href='/view-projects' className='text-gradient btn-link'>My Portfolio</a>
+            <a href='#/view-projects' className='text-gradient btn-link'>My Portfolio</a>
           </motion.div>
           {/* Socials */}
           <motion.div 
