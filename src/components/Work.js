@@ -22,7 +22,7 @@ const Work = () => {
             </p>
             <Link to="#/view-projects"><button className='btn btn-sm'>View all projects</button></Link>
             <Routes>
-                <Route path="#/view-projects" element={<Projects />} />
+                <Route path="/view-projects" element={<Projects />} />
             </Routes>
             
           </div>
